@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "QA Automation Playwright test repo",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:NORM": "npx playwright test tests/hw25.spec.ts --project=NORM --ui",
+    "test:BUG": "npx playwright test tests/hw25.spec.ts --project=BUG --ui"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
