@@ -6,7 +6,7 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   retries: 2, 
-  reporter: 'html',
+  reporter: [['line'],['html']],
   outputDir: 'test-results',
   timeout: 30000,
   use: {
@@ -21,12 +21,18 @@ export default defineConfig({
 
   projects: [
     {
+      name: "setup",
+      use: { ...devices["Desktop Chrome"]},
+      testMatch: /.*\.setup\.ts/
+    },
+    {
       name: 'NORM',
       use: 
       { 
         ...devices['Desktop Chrome'],
-        baseURL: process.env.BASEURL_NORM
+        baseURL: process.env.BASEURL_NORM,
       },
+      dependencies: ["setup"],
     },
 
     {
@@ -36,6 +42,7 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         baseURL: process.env.BASEURL_BUG
       },
+      dependencies: ["setup"],
     },
   ],
 });

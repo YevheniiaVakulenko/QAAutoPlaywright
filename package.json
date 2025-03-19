@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:NORM": "npx playwright test tests/hw25.spec.ts --project=NORM --ui",
-    "test:BUG": "npx playwright test tests/hw25.spec.ts --project=BUG --ui"
+    "test:BUG": "npx playwright test tests/hw25.spec.ts --project=BUG --ui",
+    "test:with-setupNORM":"npx playwright test tests/hw27.spec.ts --project=NORM --ui"
   },
   "keywords": [],
   "author": "",

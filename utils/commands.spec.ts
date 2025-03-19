@@ -29,3 +29,17 @@ export async function checkWrongDataInput(page, inputLocator, inputData, message
     await expect(input).toHaveCSS('border-color', 'rgb(220, 53, 69)');
     await expect(page.getByRole('button', { name: 'Register' })).toBeDisabled();
 }
+
+export async function addCar(page){
+    await page.getByRole('button', { name: 'Add car' }).click();
+    await page.getByLabel('Brand').selectOption('2: 3');
+    await page.getByLabel('Model').selectOption('6: 12');
+    await page.getByRole('spinbutton', { name: 'Mileage' }).fill('12');
+    await page.getByRole('button', { name: 'Add' }).click();
+}
+
+export async function deleteCar(page){
+    await page.locator('.car_edit').click();
+    await page.getByRole('button', { name: 'Remove car' }).click();
+    await page.getByRole('button', { name: 'Remove' }).click();
+}
