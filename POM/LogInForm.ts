@@ -8,6 +8,7 @@ export class LogInForm {
   private emailInput: Locator;
   private passwordInput:Locator;
   private logInButton:Locator;
+  
   constructor(page: Page) {
     this.page = page;
     this.dialog = page.getByRole('dialog');
