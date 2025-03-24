@@ -35,7 +35,13 @@ export async function addCar(page){
     await page.getByLabel('Brand').selectOption('2: 3');
     await page.getByLabel('Model').selectOption('6: 12');
     await page.getByRole('spinbutton', { name: 'Mileage' }).fill('12');
+    const responsePromise = page.waitForResponse('https://qauto.forstudy.space/api/cars');
     await page.getByRole('button', { name: 'Add' }).click();
+    const response = await responsePromise;
+    const responseBody = await response.json();
+    const carId = responseBody?.data?.id;
+    console.log('Car ID:', carId);
+    return carId;
 }
 
 export async function deleteCar(page){
