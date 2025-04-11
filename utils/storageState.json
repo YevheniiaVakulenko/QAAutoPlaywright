@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "sItLu6dGGDk",
+      "value": "RlEogYzLxZc",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -11,41 +11,41 @@
       "sameSite": "None"
     },
     {
-      "name": "VISITOR_INFO1_LIVE",
-      "value": "QKHuWq0Oz-c",
+      "name": "__Secure-ROLLOUT_TOKEN",
+      "value": "CMTKp8rx3J67tAEQr_-l267QjAMYr_-l267QjAM%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1758374972.021192,
+      "expires": 1759939739.444761,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "value": "fJ3NQZqzV6A",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1759939739.444826,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJHQhIEGgAgTA%3D%3D",
+      "value": "CgJHQhIEGgAgDA%3D%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1758374972.021253,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CMv5qfqO6pfLOBDY0urA6aKMAxjY0urA6aKMAw%3D%3D",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1758374972.021271,
+      "expires": 1759939739.444843,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "sid",
-      "value": "s%3A0n0Kxu5TLBGL-WrNCdZf8PNlF-l1KUwz.PS1vXgcTFYGqn%2FldxhY61FynCNS05QZA%2BtjXv4VCqJk",
+      "value": "s%3AtK5gY6rE4FZnGAHONYO-iz9X7WLGEMjk.9r2p9UMc29exphZabHOGAxIJOsx7%2FIzWmQ0a9JgC8b8",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1742909373.217861,
+      "expires": 1744474140.892468,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -57,7 +57,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1745414972412,\"creation\":1742822972412}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1746979739806,\"creation\":1744387739806}"
         }
       ]
     }
